@@ -1,0 +1,196 @@
+// contacts start
+
+.contacts{
+    position: relative;
+
+    &__list{
+        width: 100%;
+        height: auto;
+        background-color: $text;
+        padding: 60px 35px;
+    }
+
+    &__item{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        grid-gap: 50px;
+        width: 100%;
+    }
+
+    &__cart__menu{
+        li+li{
+            margin-top: 35px;
+        }
+    }
+
+    &__link__menu{
+        @include fontAll(24px,400,$link);
+        line-height: 140%;
+        display: flex;
+        align-items:flex-start;
+        span{
+            color: $blue;
+            margin-right: 10px;
+        }
+    }
+
+    &__form{
+        width: 100%;
+        position: relative;
+    }
+
+    &__form__list{
+        display: flex;
+        align-items:center;
+        grid-gap: 20px;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    &__form__input{
+        width: 100%;
+        height: 50px;
+        background-color:#F5F5F5;
+        outline: none;
+        border: none;
+        padding: 15px 20px;
+        @include fontAll(18px,400,$link);
+
+        &::placeholder{
+            @include fontAll(18px,400,$link);
+        }
+    }
+
+    &__form__file{
+        width: 100%;
+        height: 50px;
+        background-color:#F5F5F5;
+        outline: none;
+        border: none;
+        padding: 12px 20px;
+        @include fontAll(18px,400,$link);
+
+        &::placeholder{
+            @include fontAll(18px,400,$link);
+        }
+    }
+
+    &__item__text{
+        @include fontAll(18px,400,$link);
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    &__form__textarea{
+        width: 100%;
+        resize: none;
+        height: 120px;
+        background-color:#F5F5F5;
+        margin-bottom: 20px;
+        outline: none;
+        border: none;
+        padding: 15px 20px;
+        @include fontAll(18px,400,$link);
+
+        &::placeholder{
+            @include fontAll(18px,400,$link);
+        }
+    }
+
+    &__form__button{
+       @include fontAll(16px,700,$text);
+       line-height: 100%;
+       background-color:$blue;
+       padding: 15px 50px;
+       border-radius: 30px;
+       -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+       -ms-border-radius: 30px;
+       -o-border-radius: 30px;
+       margin-top: 30px;
+       text-transform: uppercase;
+    }
+
+    &__button{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    &__cart{
+        flex: 0 0 50%;
+    }
+}
+
+// contacts end
+
+
+@media (max-width:1250px){
+    .contacts__link__menu {
+        font-size: 20px;
+    }
+
+    .contacts__item {
+        grid-gap: 30px;
+    }
+}
+
+
+@media (max-width:900px){
+    .contacts__item{
+        flex-direction: column;
+    }
+
+    .contacts__item__text{
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width:700px){
+    .contacts__list{
+        padding: 30px;
+    }
+}
+
+
+@media (max-width:600px){
+    .contacts__form__list{
+        flex-direction: column;
+    }
+
+    .contacts__link__menu {
+        font-size: 18px;
+    }
+
+    .contacts__cart__menu li + li {
+        margin-top: 20px;
+    }
+
+    .contacts__form__input,
+    .contacts__form__file{
+        height: 40px;
+        padding: 7px 20px;
+    }
+
+    .contacts__form__textarea{
+        height: 110%;
+    }
+
+    .contacts__form__button {
+        font-size: 14px;
+    }
+
+    .contacts__item__text{
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width:450px){
+    .contacts__link__menu {
+        font-size: 16px;
+    }
+}

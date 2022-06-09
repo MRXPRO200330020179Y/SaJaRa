@@ -1,0 +1,280 @@
+
+// sajara start
+
+.sajara{
+    position: relative;
+
+    &__list{
+        width: 100%;
+        height: 100%;
+        background-color: $text;
+        padding: 60px 35px;
+        overflow-x: scroll;
+    }
+
+    &__item{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__item__cart{
+        position: relative;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+
+    &__item__img{
+        position: relative;
+        @include fiximg(90px,90px,true);
+
+        &::after{
+            content:'';
+            background-image: url(../foto//ramka.png);
+            width: 120%;
+            display: block;
+            height: 120%;
+            background-repeat:no-repeat;
+            background-size:cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 10;
+            transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+        }
+    }
+
+    
+    &__title__h2{
+        @include fontAll(30px,600,$link);
+        line-height: 100%;
+        width: 200px;
+        padding: 10px 0;
+        margin-top: 5px;
+    }
+
+    &__title__h3{
+        @include fontAll(18px,700,$link);
+        padding-bottom: 10px;
+        line-height: 100%;
+        width: 200px;
+    }
+
+    &__link__tel{
+        @include fontAll(18px,400,$link);
+        line-height: 100%;
+        span{
+            margin-right: 5px;
+        }
+    }
+
+    &__list__cart{
+        width: 100vmax;
+    }
+
+    &__link__button{
+        width: 50px;
+        height: 30px;
+        background-color:$blue;
+        border-radius:30px;
+        -webkit-border-radius:30px;
+        -moz-border-radius:30px;
+        -ms-border-radius:30px;
+        -o-border-radius:30px;
+        text-align: center;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        @include fontAll(18px,600,$text);
+        margin-top: 10px;
+    }
+}
+
+
+.sajara__list::-webkit-scrollbar {
+    width: 2px;
+    height: 10px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.sajara__list::-webkit-scrollbar-track {
+    background: $link;
+}
+
+.sajara__list::-webkit-scrollbar-thumb {
+    background: $blue;
+    height: 10px;
+    border-radius: 50px;
+}
+
+// sajara end
+
+* {margin: 0; padding: 0;}
+
+.sajara__list__cart ul {
+	padding-top: 30px; 
+    position: relative;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+}
+
+.sajara__list__cart ul li ul{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+.sajara__list__cart ul li ul li ul{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+.sajara__list__cart ul li ul li ul{
+    .sajara__item__cart::after{
+        display: none;
+    }
+}
+
+.sajara__list__cart li {
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	width: 100%;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.sajara__list__cart li::before, .sajara__list__cart li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 4px solid $blue;
+	width: 50%; height: 20px;
+}
+.sajara__list__cart li::after{
+	right: auto; left: 50%;
+	border-left: 4px solid $blue;
+}
+
+.sajara__list__cart li:only-child::after, .sajara__list__cart li:only-child::before {
+	display: none;
+}
+
+.sajara__list__cart li:only-child{
+     padding-top: 0;
+     width: 100%;
+}
+
+.sajara__list__cart li:first-child::before, .sajara__list__cart li:last-child::after{
+	border: 0 none;
+}
+
+.sajara__list__cart li:last-child::before{
+	border-right: 4px solid $blue;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.sajara__list__cart li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+
+.sajara__list__cart ul ul::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 4px solid $blue;
+    width: 0;
+    height: 30px;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+}
+
+.sajara__list__cart ul ul::after{
+    content:'';
+    display: block;
+    background-color:$blue;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-radius:50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    -ms-border-radius:50px;
+    -o-border-radius:50px;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+}
+
+
+.sajara__list__cart li a:hover+ul li::after, 
+.sajara__list__cart li a:hover+ul li::before, 
+.sajara__list__cart li a:hover+ul::before, 
+.sajara__list__cart li a:hover+ul ul::before{
+	border-color:  $blue;
+}
+
+
+@media (max-width:900px){
+    .sajara__title__h2 {
+        font-size: 26px;
+    }
+
+    .sajara__title__h3,
+    .sajara__link__tel {
+        font-size: 16px;
+    }
+
+    .sajara__item__img {
+        position: relative;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+@media (max-width:600px){
+    .sajara__title__h2 {
+        font-size: 22px;
+    }
+
+    .sajara__link__button{
+        font-size: 16px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width:400px){
+    .sajara__title__h2 {
+        font-size: 20px;
+    }
+}
