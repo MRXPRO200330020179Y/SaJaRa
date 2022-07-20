@@ -1,0 +1,37 @@
+.searching{
+    position: relative;
+
+    &__item__link{
+        display: flex;
+        align-items:center;
+        grid-gap: 30px;
+    }
+
+    &__item{
+        background-color: #FFFFFF;
+        box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.14);
+        padding: 20px;
+        max-width: 600px;
+
+        .sajara__title__h2{
+            padding: 0 0 10px 0;
+        }
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 30px;
+    }
+}
+
+
+@media (max-width:500px){
+    .searching__item__link{
+        flex-direction: column;
+    }
+
+    .searching__item__link .sajara__title__h2, .sajara__title__h3, .sajara__link__tel{
+        text-align: center;
+    }
+}

@@ -1761,6 +1761,37 @@ label {
     -moz-transform: translateY(97px);
   }
 }
+.searching {
+  position: relative;
+}
+.searching__item__link {
+  display: flex;
+  align-items: center;
+  grid-gap: 30px;
+}
+.searching__item {
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.14);
+  padding: 20px;
+  max-width: 600px;
+}
+.searching__item .sajara__title__h2 {
+  padding: 0 0 10px 0;
+}
+.searching__list {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+
+@media (max-width: 500px) {
+  .searching__item__link {
+    flex-direction: column;
+  }
+  .searching__item__link .sajara__title__h2, .sajara__title__h3, .sajara__link__tel {
+    text-align: center;
+  }
+}
 body {
   font-family: Arial, sans-serif;
   background-image: url(../foto/fon.png);
@@ -1794,7 +1825,7 @@ h1, h2 {
 
 .header {
   position: relative;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   height: auto;
   background-color: #FFFFFF;
