@@ -1,260 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/slick.css">
-		<title>Searching Results</title>
-</head>
-<body>	
-	
-<!-- animation loading start-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <title>Searching Results</title>
+  </head>
+  <body>
+    <!-- animation loading start-->
 
-	<section id="preloder" class="loading__list">
-		<div class="loading-area">
-		  <div class="loading-box"></div>
-			<div class="loading-pic">
-			  <div class="loader">
-			   <span class="block-1"></span>
-			   <span class="block-2"></span>
-			   <span class="block-3"></span>
-			   <span class="block-4"></span>
-			   <span class="block-5"></span>
-			   <span class="block-6"></span>
-			   <span class="block-7"></span>
-			   <span class="block-8"></span>
-			   <span class="block-9"></span>
-			   <span class="block-10"></span>
-			   <span class="block-11"></span>
-			   <span class="block-12"></span>
-			   <span class="block-13"></span>
-			   <span class="block-14"></span>
-			   <span class="block-15"></span>
-			   <span class="block-16"></span>
-			   </div>
-			 </div>
-		  </div>
-	</section>
+    <section id="preloder" class="loading__list">
+      <div class="loading-area">
+        <div class="loading-box"></div>
+        <div class="loading-pic">
+          <div class="loader">
+            <span class="block-1"></span>
+            <span class="block-2"></span>
+            <span class="block-3"></span>
+            <span class="block-4"></span>
+            <span class="block-5"></span>
+            <span class="block-6"></span>
+            <span class="block-7"></span>
+            <span class="block-8"></span>
+            <span class="block-9"></span>
+            <span class="block-10"></span>
+            <span class="block-11"></span>
+            <span class="block-12"></span>
+            <span class="block-13"></span>
+            <span class="block-14"></span>
+            <span class="block-15"></span>
+            <span class="block-16"></span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- animation loading end-->
-                                                                          
-<!-- header start -->
-  
-  <header>
-	<div class="header">
-			<section class="container">
-					<div class="header__list">
-							<div class="header__item">
-									<div class="header__logo">
-											<a href="#!"><img src="foto/logo.svg" alt="logo"></a>
-									</div>
-									
-									<div>
-										<ul class="header__menu">
-											<li><a class="header__menu__link" href="#!">Шажара</a></li>
-											<li><a class="header__menu__link" href="#!">Янгиликлар</a></li>
-											<li>
-												<a class="header__menu__link" href="#!">Медиа</a>
-												<div class="dropdown">
-													<ul class="header__dropdown">
-															<li><a class="header__dropdown_link" href="#!">Фотогалерея</a></li>
-															<li><a class="header__dropdown_link" href="#!">Видеогалерея</a></li>
-													</ul>
-											  </div>
-											</li>
-											<li><a class="header__menu__link" href="#!">Контактлар</a></li>
-										</ul>
-									</div>
-							</div>
+    <!-- animation loading end-->
 
-							<div class="header__item">
-									 <div>
-											<form action="#!" class="header__form">
-												 <input class="header__form__input" type="text" placeholder="Qildirmoq">
-												 <button class="header__form__button" type="submit"><i class="fas fa-search"></i></button>
-											</form>
-									 </div>
+    <!-- header start -->
 
-									 <div>
-											 <ul class="header__uz__menu">
-													 <li>
-															<a href="#!" class="header__uz__menu__link">UZ <span><i class="fas fa-angle-down"></i></span></a>
-															<ul class="header__ru__none">
-																	 <li><a href="#!" class="header__uz__menu__link">RU</a></li>
-																	<li> <a href="#!" class="header__uz__menu__link">EN</a></li>
-															</ul>
-													 </li>
-											 </ul>
-									 </div>
+    <header>
+      <div class="header">
+        <section class="container">
+          <div class="header__list">
+            <div class="header__item">
+              <div class="header__logo">
+                <a href="#!"><img src="foto/logo.svg" alt="logo" /></a>
+              </div>
 
-									 
-									 <div class="header__burger">
-											 <div class="header__burger__start burger__start"><i class="fas fa-bars"></i></div>
-											 <div class="header__burger__start burger__end"><i class="fas fa-times"></i></div>
-									 </div>
-							</div>
-					</div>
-			</section>
-	</div>
-  </header>
+              <div>
+                <ul class="header__menu">
+                  <li>
+                    <a class="header__menu__link" href="sajara.html">Шажара</a>
+                  </li>
+                  <li>
+                    <a class="header__menu__link" href="news.html"
+                      >Янгиликлар</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__menu__link" href="#!">Медиа</a>
+                    <div class="dropdown">
+                      <ul class="header__dropdown">
+                        <li>
+                          <a
+                            class="header__dropdown_link"
+                            href="PhotoGallery.html"
+                            >Фотогалерея</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="header__dropdown_link"
+                            href="VideoGaller.html"
+                            >Видеогалерея</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="header__menu__link" href="contacts.html"
+                      >Контактлар</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-<!-- header end -->
+            <div class="header__item">
+              <div>
+                <form action="#!" class="header__form">
+                  <input
+                    class="header__form__input"
+                    type="text"
+                    placeholder="Qildirmoq"
+                  />
+                  <button class="header__form__button" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </div>
 
+              <div>
+                <ul class="header__uz__menu">
+                  <li>
+                    <a href="#!" class="header__uz__menu__link"
+                      >UZ <span><i class="fas fa-angle-down"></i></span
+                    ></a>
+                    <ul class="header__ru__none">
+                      <li>
+                        <a href="#!" class="header__uz__menu__link">RU</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="header__uz__menu__link">EN</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
 
+              <div class="header__burger">
+                <div class="header__burger__start burger__start">
+                  <i class="fas fa-bars"></i>
+                </div>
+                <div class="header__burger__start burger__end">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
 
-<!-- searching results start -->
+    <!-- header end -->
 
+    <!-- searching results start -->
 
-<div class="searching">
-	<section class="container">
-			<div class="gallery__list">
-        <h2 class="gallery__title__h2">Результаты Поиска</h2>
+    <div class="searching">
+      <section class="container">
+        <div class="gallery__list">
+          <h2 class="gallery__title__h2">Результаты Поиска</h2>
 
-				<ul class="searching__list">
+          <ul class="searching__list">
+            <li class="searching__item">
+              <a class="searching__item__link" href="#!">
+                <div class="sajara__item__img">
+                  <img src="foto/sajara_1.png" alt="sajara" />
+                </div>
 
-					<li class="searching__item">
-						<a class="searching__item__link" href="#!">
-							<div class="sajara__item__img">
-								<img src="foto/sajara_1.png" alt="sajara">
-							</div>
+                <div>
+                  <h2 class="sajara__title__h2">Давронбой</h2>
+                  <h3 class="sajara__title__h3">1904 - 1953 йил</h3>
+                  <h4 class="sajara__link__tel">
+                    <span><i class="fas fa-phone-alt"></i></span> + 998 90 123
+                    45 67
+                  </h4>
+                </div>
+              </a>
+            </li>
 
-							<div>
-								<h2 class="sajara__title__h2">Давронбой</h2>
-								<h3 class="sajara__title__h3">1904 - 1953 йил</h3>
-								<h4 class="sajara__link__tel"><span><i class="fas fa-phone-alt"></i></span> + 998 90 123 45 67</h4>
-							</div>
-						</a>
-					</li>
+            <li class="searching__item">
+              <a class="searching__item__link" href="#!">
+                <div class="sajara__item__img">
+                  <img src="foto/sajara_2.png" alt="sajara" />
+                </div>
 
-					<li class="searching__item">
-						<a class="searching__item__link" href="#!">
-							<div class="sajara__item__img">
-								<img src="foto/sajara_2.png" alt="sajara">
-							</div>
+                <div>
+                  <h2 class="sajara__title__h2">Рўзибой</h2>
+                  <h3 class="sajara__title__h3">1934 - 1973 йил</h3>
+                  <h4 class="sajara__link__tel">
+                    <span><i class="fas fa-phone-alt"></i></span> + 998 90 123
+                    45 67
+                  </h4>
+                </div>
+              </a>
+            </li>
 
-							<div>
-								<h2 class="sajara__title__h2">Рўзибой</h2>
-								<h3 class="sajara__title__h3">1934 - 1973 йил</h3>
-								<h4 class="sajara__link__tel"><span><i class="fas fa-phone-alt"></i></span> + 998 90 123 45 67</h4>
-							</div>
-						</a>
-					</li>
+            <li class="searching__item">
+              <a class="searching__item__link" href="#!">
+                <div class="sajara__item__img">
+                  <img src="foto/sajara_3.png" alt="sajara" />
+                </div>
 
-					<li class="searching__item">
-						<a class="searching__item__link" href="#!">
-							<div class="sajara__item__img">
-								<img src="foto/sajara_3.png" alt="sajara">
-							</div>
+                <div>
+                  <h2 class="sajara__title__h2">Кўзибой</h2>
+                  <h3 class="sajara__title__h3">1938 - 1976 йил</h3>
+                  <h4 class="sajara__link__tel">
+                    <span><i class="fas fa-phone-alt"></i></span> + 998 90 123
+                    45 67
+                  </h4>
+                </div>
+              </a>
+            </li>
 
-							<div>
-								<h2 class="sajara__title__h2">Кўзибой</h2>
-								<h3 class="sajara__title__h3">1938 - 1976 йил</h3>
-								<h4 class="sajara__link__tel"><span><i class="fas fa-phone-alt"></i></span> + 998 90 123 45 67</h4>
-							</div>
-						</a>
-					</li>
+            <li class="searching__item">
+              <a class="searching__item__link" href="#!">
+                <div class="sajara__item__img">
+                  <img src="foto/sajara_4.png" alt="sajara" />
+                </div>
 
-					<li class="searching__item">
-						<a class="searching__item__link" href="#!">
-							<div class="sajara__item__img">
-								<img src="foto/sajara_4.png" alt="sajara">
-							</div>
+                <div>
+                  <h2 class="sajara__title__h2">Савронбой</h2>
+                  <h3 class="sajara__title__h3">1950 - 1990 йил</h3>
+                  <h4 class="sajara__link__tel">
+                    <span><i class="fas fa-phone-alt"></i></span> + 998 90 123
+                    45 67
+                  </h4>
+                </div>
+              </a>
+            </li>
 
-							<div>
-								<h2 class="sajara__title__h2">Савронбой</h2>
-								<h3 class="sajara__title__h3">1950 - 1990 йил</h3>
-								<h4 class="sajara__link__tel"><span><i class="fas fa-phone-alt"></i></span> + 998 90 123 45 67</h4>
-							</div>
-						</a>
-					</li>
+            <li class="searching__item">
+              <a class="searching__item__link" href="#!">
+                <div class="sajara__item__img">
+                  <img src="foto/sajara_5.png" alt="sajara" />
+                </div>
 
-					<li class="searching__item">
-						<a class="searching__item__link" href="#!">
-							<div class="sajara__item__img">
-								<img src="foto/sajara_5.png" alt="sajara">
-							</div>
+                <div>
+                  <h2 class="sajara__title__h2">Тош</h2>
+                  <h3 class="sajara__title__h3">1938 - 1976 йил</h3>
+                  <h4 class="sajara__link__tel">
+                    <span><i class="fas fa-phone-alt"></i></span> + 998 90 123
+                    45 67
+                  </h4>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
 
-							<div>
-								<h2 class="sajara__title__h2">Тош</h2>
-								<h3 class="sajara__title__h3">1938 - 1976 йил</h3>
-								<h4 class="sajara__link__tel"><span><i class="fas fa-phone-alt"></i></span> + 998 90 123 45 67</h4>
-							</div>
-						</a>
-					</li>
+    <!-- searching results end -->
 
-				</ul>
+    <!-- footer start -->
 
-			</div>
-	</section>
-</div>
+    <footer>
+      <div class="footer">
+        <section class="container">
+          <div class="footer__list">
+            <div class="footer__item">
+              <div>
+                <h2 class="footer__title__h2">СAНA СAЖAРA</h2>
+                <div class="footer__text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
 
+              <div>
+                <ul class="footer__menu">
+                  <li><a class="footer__menu__link" href="#!">Шажара</a></li>
+                  <li>
+                    <a class="footer__menu__link" href="#!">Янгиликлар</a>
+                  </li>
+                  <li><a class="footer__menu__link" href="#!">Медиа</a></li>
+                  <li>
+                    <a class="footer__menu__link" href="#!">Контактлар</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-<!-- searching results end -->
+            <div>
+              <ul class="footer__address">
+                <li>
+                  <a href="tel:+ 998 90 505 45 05" class="footer__address__link"
+                    ><span><i class="fas fa-phone-alt"></i></span> + 998 90 505
+                    45 05</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__address__link"
+                    ><span><i class="fas fa-map-marker-alt"></i></span>
+                    Узбекистан, г. Ташкент Ул. Садыка Азимова, 68</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:info@sos.uz" class="footer__address__link"
+                    ><span><i class="fas fa-envelope"></i></span> info@sos.uz</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
 
+      <div class="footer__bottom">
+        <section class="container">
+          <div class="footer__bottom__list">
+            <a href="#!" class="footer__bottom__link">Created by SOS</a>
+          </div>
+        </section>
+      </div>
+    </footer>
 
+    <!-- footer end -->
 
-<!-- footer start -->
-
-<footer>
-	<div class="footer">
-			<section class="container">
-					<div class="footer__list">
-							<div class="footer__item">
-									<div>
-											<h2 class="footer__title__h2">СAНA СAЖAРA</h2>
-											<div class="footer__text">
-													<p>
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-													</p>
-											</div>
-									</div>
-
-									<div>
-										<ul class="footer__menu">
-											<li><a class="footer__menu__link" href="#!">Шажара</a></li>
-											<li><a class="footer__menu__link" href="#!">Янгиликлар</a></li>
-											<li><a class="footer__menu__link" href="#!">Медиа</a></li>
-											<li><a class="footer__menu__link" href="#!">Контактлар</a></li>
-										</ul>
-									</div>
-							</div>
-
-							<div>
-									<ul class="footer__address">
-											<li>
-												<a href="tel:+ 998 90 505 45 05" class="footer__address__link"><span><i class="fas fa-phone-alt"></i></span> + 998 90 505 45 05</a>
-											</li>
-											<li>
-													<a  class="footer__address__link"><span><i class="fas fa-map-marker-alt"></i></span> Узбекистан, г. Ташкент Ул. Садыка Азимова, 68</a>
-											 </li>
-											<li>
-												<a href="mailto:info@sos.uz" class="footer__address__link"><span><i class="fas fa-envelope"></i></span> info@sos.uz</a>
-											</li>
-									</ul>
-							</div>
-
-					</div>
-			</section>
-	</div>
-
-	<div class="footer__bottom">
-			<section class="container">
-					<div class="footer__bottom__list">
-							<a href="#!" class="footer__bottom__link">Created by SOS</a>
-					</div>
-			</section>
-	</div>
-</footer>
-
-<!-- footer end -->
-	
- <script src="js/jquery-3.6.0.min.js"></script>
- <script src="js/slick.min.js"></script>
- <script src="js/animation.js"></script>
- <script src="js/index.js"></script>
- <script src="js/video.js"></script>
-</body>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/video.js"></script>
+  </body>
 </html>

@@ -7,8 +7,10 @@
     &__list{
         width: 100%;
         height: 100%;
-        background-color: $text;
-        padding: 60px 35px;
+        min-height: 820px;
+        max-height: 100%;
+        background-color: transparent;
+        padding: 0px 35px 60px 35px;
         overflow-x: scroll;
     }
 
@@ -52,7 +54,7 @@
         }
     }
 
-    
+
     &__title__h2{
         @include fontAll(30px,600,$link);
         line-height: 100%;
@@ -77,7 +79,8 @@
     }
 
     &__list__cart{
-        width: 100vmax;
+        width: fit-content;
+        margin: 0 auto;
     }
 
     &__link__button{
@@ -95,6 +98,23 @@
         justify-content: center;
         @include fontAll(18px,600,$text);
         margin-top: 10px;
+    }
+
+    &__list__link{
+        background-color:#248CC6;
+        padding: 12px 20px;
+        @include fontAll(16px,700,$text);
+        text-transform: uppercase;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        display: inline-block;
+        margin-top: 60px;
+        span{
+            margin-right: 10px;
+        }
     }
 }
 
@@ -124,7 +144,7 @@
 * {margin: 0; padding: 0;}
 
 .sajara__list__cart ul {
-	padding-top: 30px; 
+	padding-top: 30px;
     position: relative;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -236,13 +256,12 @@
 }
 
 
-.sajara__list__cart li a:hover+ul li::after, 
-.sajara__list__cart li a:hover+ul li::before, 
-.sajara__list__cart li a:hover+ul::before, 
+.sajara__list__cart li a:hover+ul li::after,
+.sajara__list__cart li a:hover+ul li::before,
+.sajara__list__cart li a:hover+ul::before,
 .sajara__list__cart li a:hover+ul ul::before{
 	border-color:  $blue;
 }
-
 
 @media (max-width:900px){
     .sajara__title__h2 {
@@ -260,7 +279,6 @@
         height: 80px;
     }
 }
-
 
 @media (max-width:600px){
     .sajara__title__h2 {
