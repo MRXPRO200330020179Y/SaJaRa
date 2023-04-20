@@ -2150,14 +2150,14 @@ h2 {
   text-align: center;
   font-size: 40px;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #000;
   line-height: 100%;
   padding-bottom: 20px;
 }
 .main__item__text {
   font-size: 28px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #000;
   line-height: 28px;
   text-align: center;
   padding-bottom: 25px;
@@ -2165,7 +2165,7 @@ h2 {
 .main__title__h3 {
   font-size: 28px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #000;
   line-height: 32px;
   text-align: center;
   padding-bottom: 30px;
@@ -2174,7 +2174,7 @@ h2 {
 }
 .main__title__h3::after {
   content: "";
-  background-color: rgba(251, 251, 252, 0.692);
+  background-color: rgba(0, 0, 0, 0.719);
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -2193,8 +2193,8 @@ h2 {
 }
 .main__text {
   font-size: 24px;
-  font-weight: 400;
-  color: #FFFFFF;
+  font-weight: 600;
+  color: #000;
   line-height: 34px;
   text-align: center;
   padding-bottom: 40px;
@@ -2250,7 +2250,7 @@ h2 {
 .main__fullName__title {
   font-size: 28px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #000;
   line-height: 32px;
   text-align: center;
   padding-bottom: 50px;

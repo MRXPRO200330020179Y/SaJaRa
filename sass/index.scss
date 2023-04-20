@@ -312,20 +312,20 @@ h2 {
 
   &__title__h2 {
     text-align: center;
-    @include fontAll(40px, 600, $text);
+    @include fontAll(40px, 600, #000);
     line-height: 100%;
     padding-bottom: 20px;
   }
 
   &__item__text {
-    @include fontAll(28px, 400, $text);
+    @include fontAll(28px, 400, #000);
     line-height: 28px;
     text-align: center;
     padding-bottom: 25px;
   }
 
   &__title__h3 {
-    @include fontAll(28px, 700, $text);
+    @include fontAll(28px, 700, #000);
     line-height: 32px;
     text-align: center;
     padding-bottom: 30px;
@@ -333,7 +333,7 @@ h2 {
     margin-bottom: 20px;
     &::after {
       content: "";
-      background-color: rgba(251, 251, 252, 0.692);
+      background-color: rgba(0, 0, 0, 0.719);
       border-radius: 6px;
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
@@ -353,7 +353,7 @@ h2 {
   }
 
   &__text {
-    @include fontAll(24px, 400, $text);
+    @include fontAll(24px, 600, #000);
     line-height: 34px;
     text-align: center;
     padding-bottom: 40px;
@@ -409,7 +409,7 @@ h2 {
   }
 
   &__fullName__title {
-    @include fontAll(28px, 700, $text);
+    @include fontAll(28px, 700, #000);
     line-height: 32px;
     text-align: center;
     padding-bottom: 50px;
